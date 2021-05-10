@@ -172,8 +172,8 @@ def basemap(route, nearby_wmo=None, nearest_wmo=None, route_color='#A825DA', tit
         legend=go.layout.Legend(orientation='h'),
     )
     fig.update_layout(
-        autosize=False,
-        width='960',
+        # autosize=False,
+        # width=1440,
         # height=860,
         geo=dict(
             landcolor="rgb(212, 212, 212)",
