@@ -8,3 +8,4 @@ jupyterlab
 jupyter_contrib_nbextensions
 scipy
 scikit-learn
+tqdm
