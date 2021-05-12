@@ -1,10 +1,17 @@
-from editolidoProxy import load_ofp
 from editolido.geopoint import GeoPointEncoder
+from editolido.ofp import OFP, io_base64_decoder, ofp_to_text
+import base64
 import json
 import os.path
 import sys
 
 BASEDIR = 'ofp'
+
+
+def load_ofp(filename):
+    with open(filename, "rb") as pdf_file:
+        pdf_io = io_base64_decoder(base64.b64encode(pdf_file.read()))
+        return OFP(ofp_to_text(pdf_io))
 
 
 def pdf2json(pathname):

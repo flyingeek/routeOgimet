@@ -1,0 +1,3 @@
+[submodule "editolido"]
+	path = editolido
+	url = https://github.com/flyingeek/editolido.git
